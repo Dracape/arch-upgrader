@@ -125,6 +125,6 @@ for i in (seq 1 (count {$systemd_units}))
 end
 ##### Enable timers
 mkdir "$_flag_rootdir"/usr/lib/systemd/system/timers.target.wants/
-for timer in 'update-packages' 'rate-mirrors'
+for timer in 'update-packages' 'rate-mirrors' 'pacman-filesdb-refresh'
     ln --symbolic "$_flag_rootdir"/usr/lib/systemd/system/{{$timer}.timer,timers.target.wants/}
 end
