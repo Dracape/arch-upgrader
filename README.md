@@ -4,16 +4,16 @@ Automatically handle upgrades for **Arch Linux** and its derivatives
 - Tight integration with *systemd*
 - Pacman Notifications
   * Upgrades  
-    <img width="426" height="123" alt="Screenshot: Upgrade" src="https://github.com/user-attachments/assets/8a48099d-8367-4742-9308-71fb242a2eed" />
+    <img width="413" height="108" alt="Screenshot: Update" src="https://github.com/user-attachments/assets/9cdb705f-8abf-400a-a85c-5e43f941e201" />
     - **Title**: Includes number of packages
     - **Description**: List of packages being upgraded
     - **Action**: Shows the change-log for the packages in the `kgx` terminal emulator
   * Failure
     - **Locked Database**: unlock database and retry upgrade
-    <img width="427" height="164" alt="Screenshot: Failure: Locked Database" src="https://github.com/user-attachments/assets/3114c05e-94f1-4ad9-945a-255ef9022bf5" />
+    <img width="413" height="147" alt="Screenshot: Failure: Locked Database" src="https://github.com/user-attachments/assets/ae6e8733-5266-400a-bec1-1bfa4668ada7" />
 
     - **Other Issue**: Show logs on the `kgx` terminal emulator  
-    <img width="427" height="164" alt="Screenshot: Failure: Other issue" src="https://github.com/user-attachments/assets/c48ebb7e-4866-4019-88d0-73c5f39c7bec" />
+    <img width="413" height="147" alt="Screenshot: Failure: Other issue" src="https://github.com/user-attachments/assets/a2f27e7f-ce70-4beb-95e0-5749e8912a15" />
 
     
 ## Performs
