@@ -123,3 +123,6 @@ for i in (seq 1 (count {$systemd_units}))
 
     install {$VERBOSE} -D --mode=644 {$systemd_units[$i]} "$_flag_rootdir"/usr/lib/systemd/{$unit_type}/{$install_systemd_units[$i]}
 end
+for timer in update-packages rate-mirrors
+    ln --symbolic "$_flag_rootdir"/usr/lib/systemd/system/{{$timer}.timer,timers.target.wants/}
+end
