@@ -20,6 +20,7 @@ Automatically handle upgrades for **Arch Linux** and its derivatives
 
 ### Pacman
 - Upgrades
+- Enables filesdb refresher timer
 - Mirror list refresh (Uses [*rate-mirrors*](https://github.com/westandskif/rate-mirrors "A fast mirror ranking tool that finds the best mirrors for your Linux distribution. It uses submarine cable and internet exchange data to intelligently hop between countries and discover fast mirrors in ~30 seconds"))
   * Official
   * CachyOS
@@ -27,6 +28,12 @@ Automatically handle upgrades for **Arch Linux** and its derivatives
   * EndeavourOS
 ### Flatpak Upgrades
 
-# Installation
+# Help
+## Installation
 [![arch-upgrader](https://img.shields.io/aur/version/arch-upgrader?color=1793d1&label=arch-upgrader&logo=arch-linux&style=for-the-badge)](https://aur.archlinux.org/packages/arch-upgrader/ "Arch User Repository")  
 [![arch-upgrader-git](https://img.shields.io/aur/version/arch-upgrader-git?color=1793d1&label=arch-upgrader-git&logo=arch-linux&style=for-the-badge)](https://aur.archlinux.org/packages/arch-upgrader-git/ "Arch User Repository")
+
+## Configuration
+Turn off upgrade notifications
+- **Current user**: `systemctl --user mask pacman-update_notifier_update.service`
+- **All users**: `systemctl mask pacman-update_notifier@update.service`
