@@ -34,6 +34,10 @@ My parting gift to Arch Linux before migrating to NixOS. Automatically handle th
 [![arch-upgrader-git](https://img.shields.io/aur/version/arch-upgrader-git?color=1793d1&label=arch-upgrader-git&logo=arch-linux&style=for-the-badge)](https://aur.archlinux.org/packages/arch-upgrader-git/ "Arch User Repository")
 
 ## Configuration
-Turn off upgrade notifications
-- **Current user**: `systemctl --user mask pacman-update_notifier_update.service`
-- **All users**: `systemctl mask pacman-update_notifier@update.service`
+Toggle upgrade notifications
+### Current user
+**Disable**: `systemctl --user mask pacman-update_notifier_update.service`  
+**Enable**: `systemctl --user unmask pacman-update_notifier_update.service` (default)
+### All users
+**Disable**: `systemctl mask pacman-update_notifier@update.service`  
+**Enable**: `systemctl unmask pacman-update_notifier@update.service` (default)
